@@ -233,72 +233,72 @@ footer {
 }
     /* Extra css  */
 
-
-    /* 🔥 FULL MOBILE RESPONSIVE FIX */
 @media (max-width: 768px) {
 
-    /* NAVBAR FIX */
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        padding: 0;
-    }
-
-    /* HERO FIX */
+    /* HERO GAP FIX */
     .hero {
         flex-direction: column;
         height: auto;
-        padding: 40px 20px;
-        text-align: center;
+        padding: 30px 15px;
+        gap: 15px; /* 👈 gap control */
     }
 
+    /* TEXT SIZE FIX */
     .hero-left h2,
     #typing-text {
-        font-size: 26px;
+        font-size: 28px; /* 👈 bada kiya */
+        line-height: 1.3;
     }
 
     .hero p {
-        font-size: 14px;
+        font-size: 16px;
+        margin: 10px 0;
     }
 
     /* BUTTON */
     .hero button {
         width: 100%;
-        max-width: 250px;
+        max-width: 220px;
+        font-size: 15px;
     }
 
-    /* FOUNDER CARD */
+    /* FOUNDER CARD FIX */
     .founder-card {
         width: 100%;
-        max-width: 300px;
+        max-width: 320px;
+        padding: 25px; /* 👈 bada card */
     }
 
-    /* VIDEO GRID FIX */
-    .video-grid,
-    .video-container {
-        grid-template-columns: 1fr;
+    /* IMAGE SIZE FIX */
+    .founder-card img {
+        width: 130px;  /* 👈 bada image */
+        height: 130px;
     }
 
-    .video-box iframe {
-        height: 180px;
+    /* NAME TEXT */
+    .founder-card h3 {
+        font-size: 18px;
     }
 
-    /* SECTION PADDING */
-    .videos,
-    .videos-page,
-    .workshop {
-        padding: 20px;
+    .role {
+        font-size: 14px;
+    }
+
+    .desc {
+        font-size: 14px;
     }
 }
 
+.hero-left {
+    margin-bottom: 10px;
+}
+
+
+   
 
 
 
 
 
-    
+
+     */
