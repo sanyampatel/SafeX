@@ -233,72 +233,87 @@ footer {
 }
     /* Extra css  */
 
+
+    /* 🔥 FULL MOBILE RESPONSIVE FIX */
 @media (max-width: 768px) {
 
-    /* HERO GAP FIX */
+    /* NAVBAR FIX */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    /* HERO FIX */
     .hero {
         flex-direction: column;
         height: auto;
-        padding: 30px 15px;
-        gap: 15px; /* 👈 gap control */
+        padding: 40px 20px;
+        text-align: center;
     }
 
-    /* TEXT SIZE FIX */
     .hero-left h2,
     #typing-text {
-        font-size: 28px; /* 👈 bada kiya */
-        line-height: 1.3;
+        font-size: 26px;
     }
 
     .hero p {
-        font-size: 16px;
-        margin: 10px 0;
+        font-size: 14px;
     }
 
     /* BUTTON */
     .hero button {
         width: 100%;
-        max-width: 220px;
-        font-size: 15px;
+        max-width: 250px;
     }
 
-    /* FOUNDER CARD FIX */
+    /* FOUNDER CARD */
     .founder-card {
         width: 100%;
-        max-width: 320px;
-        padding: 25px; /* 👈 bada card */
+        max-width: 300px;
     }
 
-    /* IMAGE SIZE FIX */
-    .founder-card img {
-        width: 130px;  /* 👈 bada image */
-        height: 130px;
+    /* VIDEO GRID FIX */
+    .video-grid,
+    .video-container {
+        grid-template-columns: 1fr;
     }
 
-    /* NAME TEXT */
-    .founder-card h3 {
-        font-size: 18px;
+    .video-box iframe {
+        height: 180px;
     }
 
-    .role {
-        font-size: 14px;
-    }
-
-    .desc {
-        font-size: 14px;
+    /* SECTION PADDING */
+    .videos,
+    .videos-page,
+    .workshop {
+        padding: 20px;
     }
 }
 
-.hero-left {
-    margin-bottom: 10px;
+#typing-text {
+    font-size: 40px;
+    text-shadow: 0 0 20px #00ffcc;
+
+    white-space: nowrap; /* 👈 line break nahi hoga */
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    #typing-text {
+        font-size: 26px;
+        white-space: normal; /* 👈 mobile pe wrap allow */
+    }
 }
 
 
-   
 
 
 
 
-
-
-     */
+    
