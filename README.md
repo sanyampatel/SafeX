@@ -1,3 +1,10 @@
+
+<div align="center" style="width:100%;">
+<img src="https://drive.google.com/uc?export=view&id=1oIsSiIc3_29-umxax-igAw7z0tnelFsx" 
+style="width:100%; max-width:1100px; border-radius:18px; box-shadow:0 10px 25px rgba(0,0,0,0.4);" alt="Sanyam PatelBanner" />
+</div>
+
+
 <div align="center">
   <img height="150" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDNpMm1hYnVhMXR3enE0MDI1eXBzbjY4a2h6NDZjdmgzdWp3cXN3YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hun4DFmfnDId3lid5b/giphy.gif"  />
 </div>
