@@ -16,40 +16,40 @@ function startLearning() {
 // typing wla code
 
 const textArray = [
-    "SYM PATEL",
-    "Secure Now",
-    "Hack Now!!"
+    "Enter The Cyber World",
+    "Learn Ethical Hacking",
+    "Become a Cyber Expert",
+    "Secure The Digital Future"
 ];
 
-let index = 0;
+let textIndex = 0;
 let charIndex = 0;
-let currentText = "";
 let isDeleting = false;
 
 function typeEffect() {
-    const display = document.getElementById("typing-text");
-
-    if (index >= textArray.length) index = 0;
-
-    currentText = textArray[index];
+    const element = document.getElementById("typing-text");
+    const currentText = textArray[textIndex];
 
     if (!isDeleting) {
-        display.innerHTML = currentText.substring(0, charIndex++);
+        element.innerHTML = currentText.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentText.length) {
+            isDeleting = true;
+            setTimeout(typeEffect, 1500); // pause at full text
+            return;
+        }
     } else {
-        display.innerHTML = currentText.substring(0, charIndex--);
+        element.innerHTML = currentText.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % textArray.length;
+        }
     }
 
-    let speed = isDeleting ? 50 : 100;
-
-    if (!isDeleting && charIndex === currentText.length) {
-        speed = 1500; // pause
-        isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        index++;
-    }
-
-    setTimeout(typeEffect, speed);
+    setTimeout(typeEffect, isDeleting ? 40 : 80);
 }
 
 typeEffect();
